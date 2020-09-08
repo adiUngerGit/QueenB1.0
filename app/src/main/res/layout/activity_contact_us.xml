@@ -18,22 +18,24 @@
 
         <TextView
             android:id="@+id/contact_title"
+            android:fontFamily="@font/alef"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="0dp"
             android:text="יצירת קשר"
-            android:textSize="30dp"
             android:textColor="@color/darkGray"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/contact_name"
+            android:fontFamily="@font/alef"
             android:layout_width="320dp"
-            android:background="@drawable/bg_rounded_white"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rounded_white"
             android:hint="שם"
             android:paddingRight="10dp"
             android:textColorHint="#000000"
@@ -42,10 +44,11 @@
 
         <EditText
             android:id="@+id/contact_email"
+            android:fontFamily="@font/alef"
             android:layout_width="320dp"
-            android:background="@drawable/bg_rounded_white"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rounded_white"
             android:hint="אימייל"
             android:paddingRight="10dp"
             android:textColorHint="#000000"
@@ -55,9 +58,10 @@
         <EditText
             android:id="@+id/contact_subject"
             android:layout_width="320dp"
-            android:background="@drawable/bg_rounded_white"
+            android:fontFamily="@font/alef"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rounded_white"
             android:hint="נושא"
             android:paddingRight="10dp"
             android:textColorHint="#000000"
@@ -71,6 +75,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/bg_rounded_white"
             android:gravity="top"
+            android:fontFamily="@font/alef"
             android:hint="הודעה"
             android:paddingRight="10dp"
             android:textColorHint="#000000"
@@ -82,9 +87,10 @@
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rounded_dark_gray"
             android:gravity="center"
             android:text="שליחה"
-            android:background="@drawable/bg_rounded_dark_gray"
+            android:fontFamily="@font/alef"
             android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/contact_message" />
