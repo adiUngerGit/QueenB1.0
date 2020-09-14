@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackgroundPick"
+    android:orientation="vertical"
+    tools:context=".Ex2">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="341dp"
+        android:layout_height="38dp"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="nextPage"
+        android:text="לשאלה הבאה..."
+        android:textColor="@color/blue"
+        android:textColorHighlight="@color/lightBackgroundPick"
+        android:textColorHint="#573636"
+        android:textColorLink="@color/lightBackgroundPick"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webView"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/InstructionsBehaind"
+
+        android:layout_width="321dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_corners"
+        android:elegantTextHeight="true"
+        android:textColor="@color/blue"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/Instructions"
+        android:layout_width="277dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/alef"
+        android:gravity="center"
+        android:text="@string/Mission2"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="317dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instructions" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="316dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/button_rounded_corner"
+        android:onClick="finish"
+        android:text="סיימתי"
+        android:textColor="@color/lightBackgroundPick"
+        android:textColorHighlight="@color/lightBackgroundPick"
+        android:textColorHint="#573636"
+        android:textColorLink="#BF0404"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+

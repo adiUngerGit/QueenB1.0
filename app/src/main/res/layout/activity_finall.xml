@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Finall">
+
+
+    <!--the floating balls implemintation from the gravity library :-->
+    <com.github.glomadrian.grav.GravView
+        android:id="@+id/grav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:animationGenerator="com.github.glomadrian.grav.generator.animation.SideToSideAnimator"
+        app:array_colors="@array/Spectral"
+        app:ball_size_from_size="3dp"
+        app:ball_size_to_size="6dp"
+        app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+        app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+        app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+        app:regular_cell_size="150"
+        app:regular_variance="100"
+        app:side_to_side_direction="downToUp"
+        app:side_to_side_max_duration="2000"
+        app:side_to_side_min_duration="1500" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/alef"
+        android:gravity="center"
+        android:text="את פשוט מלכה! \n כל הכבוד!"
+        android:textColor="@color/darkPink"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/grav"
+        app:layout_constraintEnd_toStartOf="@+id/grav"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/grav"
+        app:layout_constraintTop_toBottomOf="@+id/grav" />
+</androidx.constraintlayout.widget.ConstraintLayout>
