@@ -1,4 +1,4 @@
-package com.example.testing_whatsapp
+package com.example.queenb
 
 import android.os.Bundle
 import android.text.TextUtils

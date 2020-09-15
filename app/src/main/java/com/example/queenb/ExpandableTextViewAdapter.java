@@ -1,15 +1,23 @@
-package com.example.queenbapp;
+package com.example.queenb;
+
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.webkit.WebView;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ExpandableTextViewAdapter extends BaseExpandableListAdapter {
     Context context;

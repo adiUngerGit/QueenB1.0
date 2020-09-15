@@ -1,9 +1,18 @@
-package com.example.queenbapp;
+package com.example.queenb;
 
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.webkit.WebView;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class FAQActivity extends AppCompatActivity {
 
@@ -17,6 +26,5 @@ public class FAQActivity extends AppCompatActivity {
         expandableTextView = findViewById(R.id.eTV);
         ExpandableTextViewAdapter adapter = new ExpandableTextViewAdapter(FAQActivity.this);
         expandableTextView.setAdapter(adapter);
-
     }
 }

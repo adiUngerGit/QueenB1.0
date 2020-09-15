@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstPageQuestions"></activity>
+        <activity android:name=".FirstPageQuestions"/>
         <activity android:name=".Finall" />
         <activity android:name=".Ex4B" />
         <activity android:name=".Ex4" />
@@ -21,15 +21,12 @@
         <activity android:name=".Ex1" />
         <activity android:name=".contact_us" />
 
-        <uses-library android:name="com.google.android.things" />
+        <uses-library
+            android:name="com.google.android.things"
+            android:required="false"/>
 
-        <activity android:name=".send_whatsapp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".send_whatsapp"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
