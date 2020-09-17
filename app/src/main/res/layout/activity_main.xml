@@ -1,20 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBackgroundPick"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="451dp"
+        android:layout_height="217dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/logo"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/a"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/b"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/c"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/d"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/e"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/f"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/g"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/h"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/i"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/j"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/k"></Button>
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="100pt"
+                android:background="@drawable/last"></Button>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView5"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="56dp"
+        android:src="@drawable/consultation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="FirstPageQuestions"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="153dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="contact_us"
+        android:src="@drawable/call_as_gif"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gifImageView5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="404dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_begin="49dp"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="14dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="378dp" />-->
+
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_begin="477dp"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="508dp" />-->
+
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+    <!--        android:id="@+id/gifImageView"-->
+    <!--        android:layout_width="206dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:onClick="FirstPageQuestions"-->
+    <!--        android:src="@drawable/giphy"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline4"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline6"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_begin="415dp"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="389dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_begin="328dp"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="367dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="630dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_begin="65dp"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="17dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        scrolling_image_view:layout_constraintGuide_begin="505dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

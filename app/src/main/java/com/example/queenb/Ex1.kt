@@ -34,4 +34,9 @@ class Ex1 : AppCompatActivity() {
         val intent = Intent(this, Ex2::class.java)
         startActivity(intent)
     }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }

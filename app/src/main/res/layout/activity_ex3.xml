@@ -8,6 +8,20 @@
     tools:context=".Ex3">
 
     <Button
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_icon"
+        android:onClick="backHome"
+        app:layout_constraintBottom_toTopOf="@+id/InstructionsBehaind"
+        app:layout_constraintEnd_toStartOf="@+id/InstructionsBehaind"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
         android:id="@+id/button3"
         android:layout_width="341dp"
         android:layout_height="38dp"
@@ -30,17 +44,17 @@
     <TextView
         android:id="@+id/InstructionsBehaind"
 
-        android:layout_width="330dp"
-        android:layout_height="157dp"
+        android:layout_width="323dp"
+        android:layout_height="147dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/rounded_corners"
         android:elegantTextHeight="true"
         android:textColor="@color/blue"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.632"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +64,7 @@
         android:layout_width="300dp"
         android:layout_height="134dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="10dp"
         android:elegantTextHeight="true"
         android:fontFamily="@font/alef"
@@ -59,7 +73,7 @@
         android:textStyle="bold"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

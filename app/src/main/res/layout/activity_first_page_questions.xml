@@ -7,6 +7,21 @@
     android:background="@color/lightBackgroundPick"
     tools:context=".FirstPageQuestions">
 
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/home_icon"
+        android:onClick="backHome"
+        app:layout_constraintBottom_toTopOf="@+id/InstructionsBehaind"
+        app:layout_constraintEnd_toStartOf="@+id/InstructionsBehaind"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
     <Button
         android:id="@+id/start"
         android:layout_width="327dp"

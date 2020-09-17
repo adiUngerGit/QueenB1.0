@@ -31,4 +31,9 @@ class Ex3 : AppCompatActivity() {
         val intent = Intent(this, FinalHTML::class.java)
         startActivity(intent)
     }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }

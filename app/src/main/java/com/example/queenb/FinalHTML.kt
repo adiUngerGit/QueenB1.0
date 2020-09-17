@@ -28,4 +28,9 @@ class FinalHTML : AppCompatActivity() {
         val intent = Intent(this, Ex4::class.java)
         startActivity(intent)
     }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }
