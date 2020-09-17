@@ -20,5 +20,9 @@
         <item>com.github.glomadrian.grav.generator.animation.BallSizeAnimator</item>
     </string-array>
 
+    <string name="Project1_Title">Tag Girls הפרויקט של קבוצת</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="main_title">Main Title</string>
+
 
 </resources>
