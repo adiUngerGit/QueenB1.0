@@ -1,6 +1,9 @@
 package com.example.queenb
 
 import android.content.Intent
+import android.content.Intent.ACTION_VIEW
+import android.drm.DrmStore
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebView
@@ -29,6 +32,28 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this, contact_us::class.java)
         startActivity(intent)
+    }
+
+    fun our_projects(view: View) {
+
+        val intent = Intent(this, our_projects::class.java)
+        startActivity(intent)
+    }
+
+    fun enterInstegram(view: View) {
+        val url = "https://www.instagram.com/queenbprogram/"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+    }
+
+
+    fun enterFacebook(view: View) {
+        val url = "https://www.facebook.com/queenb.program"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+
     }
 
 
