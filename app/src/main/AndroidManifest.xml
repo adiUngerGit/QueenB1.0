@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".our_projects"></activity>
+        <activity android:name=".ambassadors"></activity>
+        <activity android:name=".our_projects" />
         <activity android:name=".FirstPageQuestions" />
         <activity android:name=".Finall" />
         <activity android:name=".Ex4B" />
