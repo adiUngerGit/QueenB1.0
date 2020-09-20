@@ -4,18 +4,17 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="20dp"
-    app:cardElevation="3dp"
+    app:cardElevation="0dp"
     app:cardUseCompatPadding="true"
-    app:cardBackgroundColor="@color/lightPink"
-
     >
 
 
     <RelativeLayout
-        android:layout_width="300dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:background="@color/lightPink"
+        android:padding="7dp"
+        android:background="#99FABEBD"
+
 
 
         >
@@ -23,53 +22,55 @@
         <ImageView
             android:id="@+id/profile_image"
             android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/beyonce_icon"
-            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_profile2"
+            android:layout_marginStart="235dp"
+
             />
 
         <TextView
             android:id="@+id/profile_name"
-            android:layout_width="wrap_content"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_toEndOf="@+id/profile_image"
-            android:layout_toRightOf="@id/profile_image"
-            android:text="ruti pop"
+            android:layout_alignParentStart="true"
+
+
+            android:fontFamily="@font/alef"
+            android:text="name here"
+
             android:textSize="20dp"
-            android:textStyle="bold"
-            />
+            android:textAlignment="viewEnd"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/profile_description"
-            android:layout_width="wrap_content"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/profile_name"
-            android:layout_marginStart="30dp"
-            android:layout_marginBottom="20dp"
-            android:layout_toEndOf="@+id/profile_image"
-            android:text="8 grade, jerusalem, brener school"
+            android:text="*****description here*****"
             android:textSize="15dp"
+            android:textAlignment="viewEnd"
+            android:fontFamily="@font/alef"
 
             />
+
+        <ImageView
+            android:id="@+id/email_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/profile_description"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/email_icon2" />
 
         <ImageView
             android:id="@+id/whatsapp_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_below="@id/profile_description"
-            android:layout_marginLeft="120dp"
-            android:layout_toRightOf="@id/profile_image"
-            android:src="@drawable/whatsapp_icon" />
-        <ImageView
-            android:id="@+id/email_button"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
-            android:layout_below="@id/profile_description"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="3dp"
-            android:layout_toRightOf="@id/profile_image"
-            android:src="@drawable/email_icon" />
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/whatsapp_icon2" />
 
 
     </RelativeLayout>
