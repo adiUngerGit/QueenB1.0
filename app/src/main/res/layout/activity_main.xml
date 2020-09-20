@@ -53,6 +53,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <Button
+                android:layout_width="270dp"
+                android:layout_height="100pt"
+                android:background="@drawable/logo"
+                android:fontFamily="@font/alef"></Button>
 
             <Button
                 android:layout_width="330dp"
@@ -115,7 +120,7 @@
                 android:background="@drawable/j"></Button>
 
             <Button
-                android:layout_width="330dp"
+                android:layout_width="257dp"
                 android:layout_height="100pt"
                 android:background="@drawable/k"></Button>
 
@@ -159,6 +164,7 @@
         android:background="@drawable/round_corner_temp_color"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/alef"
+        android:onClick="ambassadors"
         android:text="צרי קשר"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toStartOf="@+id/textView8"

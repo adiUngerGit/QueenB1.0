@@ -1,13 +1,9 @@
 package com.example.queenb
 
 import android.content.Intent
-import android.content.Intent.ACTION_VIEW
-import android.drm.DrmStore
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.webkit.WebView
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, FirstPageQuestions::class.java)
         startActivity(intent)
     }
+fun ambassadors(view: View) {
+
+    val intent = Intent(this, ambassadors::class.java)
+    startActivity(intent)
+}
     fun fAQActivity(view: View) {
 
         val intent = Intent(this, FAQActivity::class.java)

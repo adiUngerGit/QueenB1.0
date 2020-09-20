@@ -1,6 +1,4 @@
 package com.example.queenb;
-// this is a test (to see how push/pull work)
-// THIS IS ANTHER TEST
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +25,4 @@ public class FAQActivity extends AppCompatActivity {
         ExpandableTextViewAdapter adapter = new ExpandableTextViewAdapter(FAQActivity.this);
         expandableTextView.setAdapter(adapter);
     }
-
-
 }
