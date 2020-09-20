@@ -1,9 +1,14 @@
 package com.example.queenb
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent.ACTION_VIEW
+import android.drm.DrmStore
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.webkit.WebView
+import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,5 +17,44 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
     }
+
+    fun FirstPageQuestions(view: View) {
+
+        val intent = Intent(this, FirstPageQuestions::class.java)
+        startActivity(intent)
+    }
+    fun fAQActivity(view: View) {
+
+        val intent = Intent(this, FAQActivity::class.java)
+        startActivity(intent)
+    }
+    fun contact_us(view: View) {
+
+        val intent = Intent(this, contact_us::class.java)
+        startActivity(intent)
+    }
+
+    fun our_projects(view: View) {
+
+        val intent = Intent(this, our_projects::class.java)
+        startActivity(intent)
+    }
+
+    fun enterInstegram(view: View) {
+        val url = "https://www.instagram.com/queenbprogram/"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+    }
+
+
+    fun enterFacebook(view: View) {
+        val url = "https://www.facebook.com/queenb.program"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+
+    }
+
 
 }

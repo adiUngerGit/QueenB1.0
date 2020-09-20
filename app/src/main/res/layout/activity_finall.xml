@@ -8,6 +8,27 @@
 
 
     <!--the floating balls implemintation from the gravity library :-->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="backHome"
+        android:text="לחזרה לעמוד הבית..."
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/lightBackgroundPick"
+        android:textColorHint="#573636"
+        android:textColorLink="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.098" />
+
     <com.github.glomadrian.grav.GravView
         android:id="@+id/grav"
         android:layout_width="match_parent"
@@ -38,7 +59,7 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/grav"
         app:layout_constraintEnd_toStartOf="@+id/grav"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/grav"
-        app:layout_constraintTop_toBottomOf="@+id/grav" />
+        app:layout_constraintTop_toBottomOf="@+id/grav"
+        app:layout_constraintVertical_bias="0.654" />
 </androidx.constraintlayout.widget.ConstraintLayout>

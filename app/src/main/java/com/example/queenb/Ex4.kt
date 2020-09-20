@@ -16,4 +16,9 @@ class Ex4 : AppCompatActivity() {
         val intent = Intent(this, Ex4B::class.java)
         startActivity(intent)
     }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }

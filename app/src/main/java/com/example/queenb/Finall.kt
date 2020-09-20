@@ -1,6 +1,7 @@
 package com.example.queenb
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -14,4 +15,11 @@ class Finall : AppCompatActivity() {
         setContentView(R.layout.activity_finall)
 
     }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+
 }

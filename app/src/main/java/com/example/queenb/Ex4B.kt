@@ -30,4 +30,11 @@ class Ex4B : AppCompatActivity() {
     fun nextPage(v: View?) {
         val intent = Intent(this, Finall::class.java)
         startActivity(intent)
-    }}
+    }
+
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+}

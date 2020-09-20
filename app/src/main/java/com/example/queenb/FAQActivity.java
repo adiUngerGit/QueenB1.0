@@ -27,4 +27,6 @@ public class FAQActivity extends AppCompatActivity {
         ExpandableTextViewAdapter adapter = new ExpandableTextViewAdapter(FAQActivity.this);
         expandableTextView.setAdapter(adapter);
     }
+
+
 }

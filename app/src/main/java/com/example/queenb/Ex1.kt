@@ -3,6 +3,7 @@ package com.example.queenb
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -32,6 +33,12 @@ class Ex1 : AppCompatActivity() {
 
     fun nextPage(v: View?) {
         val intent = Intent(this, Ex2::class.java)
+        startActivity(intent)
+
+    }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }

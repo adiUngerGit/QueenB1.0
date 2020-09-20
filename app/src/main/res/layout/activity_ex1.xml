@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightBackgroundPick">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightBackgroundPick"
+    tools:context=".Ex1">
 
     <Button
         android:id="@+id/button3"
@@ -23,7 +25,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/webView"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.354" />
+
+    <Button
+        android:layout_width="35dp"
+        android:onClick="backHome"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/home_icon"
+        app:layout_constraintBottom_toTopOf="@+id/InstructionsBehaind"
+        app:layout_constraintEnd_toStartOf="@+id/InstructionsBehaind"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
 
     <TextView
         android:id="@+id/InstructionsBehaind"
@@ -31,14 +46,13 @@
         android:layout_width="317dp"
         android:layout_height="141dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/rounded_corners"
         android:elegantTextHeight="true"
         android:textColor="@color/blue"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,7 +62,7 @@
         android:layout_width="281dp"
         android:layout_height="113dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
         android:elegantTextHeight="true"
         android:fontFamily="@font/alef"
@@ -57,9 +71,8 @@
         android:textStyle="bold"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/InstructionsBehaind" />
 
     <EditText
         android:id="@+id/code"
@@ -108,7 +121,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/code" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
