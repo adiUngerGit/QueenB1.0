@@ -5,19 +5,11 @@ class ambassador_profile(
     val city: String,
     val grade: String,
     val school: String,
-    val phone: String
+    val phone: String,
+    val email: String
 ) {
 
-//    var image = 0 //todo add img
-
-//    fun ambassador_profile(name: String,city: String,grade: String,school: String,phone: String) {
-//        this.name = name
-//        this.city=city
-//        this.grade=grade
-//        this.school=school
-//        this.phone=phone
-////        this.image = image todo return img
-//    }
+//    var image = 0 //todo  ruti add img
 
 
 }
