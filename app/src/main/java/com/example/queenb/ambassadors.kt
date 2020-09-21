@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,13 +16,13 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_ambassadors.*
 import kotlinx.android.synthetic.main.ambassador_cardview.view.*
 
-
 class ambassadors : AppCompatActivity() {
 
-    val profiles_list = ArrayList<ambassador_profile>()
+    var profiles_list = ArrayList<ambassador_profile>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_ambassadors)
         create_ambassators()
         val myAddapter = MyAddapter(profiles_list, this)
@@ -30,7 +31,6 @@ class ambassadors : AppCompatActivity() {
 
 
     }
-
 
     private fun create_ambassators() {
         val temp_email = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
@@ -81,7 +81,6 @@ class ambassadors : AppCompatActivity() {
         profiles_list.add(profile5)
     }
 
-
     class MyAddapter(val arrayList: ArrayList<ambassador_profile>, val context: Context) :
         RecyclerView.Adapter<MyAddapter.ViewHolder>() {
         val ISRAEL_AREA_CODE = "972"
@@ -90,11 +89,10 @@ class ambassadors : AppCompatActivity() {
 
         class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-
             fun bindItems(profile: ambassador_profile) {
                 itemView.profile_name.text = profile.name
                 itemView.profile_description.text =
-                    profile.city + ", " + profile.grade + ", " + profile.school
+                    profile.city + ", " + profile.age + ", " + profile.school
 
             }
         }
@@ -148,7 +146,6 @@ class ambassadors : AppCompatActivity() {
             it.type = "message/rfc822"
             context.startActivity(Intent.createChooser(it, "בחרי אפליקציית מייל"))
 
-
         }
 
 
@@ -177,4 +174,65 @@ class ambassadors : AppCompatActivity() {
 
 
     }
+
+    fun searchByFilter(view: View) {
+
+    }
+
+    fun onCheckboxClicked(view: View) {
+        var allowed_cities = mutableListOf<String>();
+        var allowed_ages = mutableListOf<String>();
+
+        if (view is CheckBox) {
+            val checked: Boolean = view.isChecked
+
+            when (view.id) {
+                R.id.jerusalem -> {
+                    if (checked) {
+                        allowed_cities.add("jerusalem")
+                    }
+                }
+                R.id.tel_aviv -> {
+                    if (checked) {
+                       allowed_cities.add("tel_aviv")
+                    }
+                }
+                R.id.haifa -> {
+                    if (checked) {
+                        allowed_cities.add("haifa")
+                    }
+                }
+                R.id.fifteen -> {
+                    if (checked) {
+                        allowed_ages.add("fifteen")
+                    }
+                }
+                R.id.sixteen -> {
+                    if (checked) {
+                        allowed_ages.add("sixteen")
+                    }
+                }
+                R.id.fourteen -> {
+                    if (checked) {
+                        allowed_ages.add("fourteen")
+                    }
+                }
+            }
+        }
+
+        var filtered = ArrayList<ambassador_profile>()
+
+        for (profile in filtered) {
+            if (profile.city in allowed_cities)
+                if (profile.age in allowed_ages)
+                    filtered.add((profile))
+        }
+
+        this.profiles_list = filtered
+
+
+    }
+
+
+
 }

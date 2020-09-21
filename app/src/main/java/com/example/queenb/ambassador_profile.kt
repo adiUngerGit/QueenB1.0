@@ -3,7 +3,7 @@ package com.example.queenb
 class ambassador_profile(
     val name: String,
     val city: String,
-    val grade: String,
+    val age: String,
     val school: String,
     val phone: String,
     val email: String

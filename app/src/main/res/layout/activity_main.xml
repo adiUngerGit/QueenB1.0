@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.529" />
 
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
+        android:id="@+id/ScrollingImage"
         android:layout_width="451dp"
         android:layout_height="217dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -152,7 +152,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollingImage"
         app:layout_constraintVertical_bias="0.435" />
 
     <Button
@@ -170,7 +170,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollingImage"
         app:layout_constraintVertical_bias="0.346" />
 
 
@@ -187,7 +187,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollingImage"
         app:layout_constraintVertical_bias="0.483" />
 
     <Button
@@ -201,7 +201,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollingImage"
         app:layout_constraintVertical_bias="0.238" />
 
     <Button
@@ -216,7 +216,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollingImage"
         app:layout_constraintVertical_bias="0.236" />
 
     <Button
@@ -230,7 +230,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollingImage"
         app:layout_constraintVertical_bias="0.236" />
 
 

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1062052345357",
+    "firebase_url": "https://queenbdb-f69a9.firebaseio.com",
+    "project_id": "queenbdb-f69a9",
+    "storage_bucket": "queenbdb-f69a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062052345357:android:c37d0b6d4d22f988e50744",
+        "android_client_info": {
+          "package_name": "com.example.queenb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062052345357-gp0ahs6hr86328h66bk989i8l7e01hgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM8vr65wTvCjSU285uQIcTpF3Luhsm3rY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062052345357-gp0ahs6hr86328h66bk989i8l7e01hgk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

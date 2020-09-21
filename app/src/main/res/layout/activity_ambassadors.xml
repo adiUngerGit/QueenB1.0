@@ -8,6 +8,7 @@
     tools:context=".ambassadors">
 
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -77,55 +78,147 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/search_constraint"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
 
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="7dp"
         android:background="@drawable/bg_rounded_light_gray"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/general_layout"
 
+        app:layout_constraintBottom_toTopOf="@+id/general_layout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_ambassador">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="301dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/alef"
+            android:gravity="top|center"
+            android:text="חיפשי לפי עיר וגיל"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="260dp"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.289">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:text="מוקד"
+                    android:textStyle="bold"></TextView>
+
+                <CheckBox
+                    android:id="@+id/jerusalem"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="ירושלים"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/tel_aviv"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="תל אביב"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/haifa"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="חיפה"></CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="גיל"
+                    android:textStyle="bold"></TextView>
+
+                <CheckBox
+                    android:id="@+id/fourteen"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="14"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/fifteen"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="15"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/sixteen"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="16"></CheckBox>
+
+            </LinearLayout>
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
+            android:foregroundGravity="bottom|center"
+            android:onClick="searchByFilter"
             android:src="@drawable/search_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         </ImageView>
 
-        <EditText
-            android:id="@+id/search_edit_text"
-            android:layout_width="280dp"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/alef"
-            android:hint="חפשו לפי עיר/ כיתה/ בית ספר"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </EditText>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/general_layout"
-        android:layout_width="320dp"
-        android:layout_height="468dp"
+        android:layout_width="353dp"
+        android:layout_height="230dp"
         android:layout_marginBottom="30dp"
 
 
@@ -133,18 +226,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_constraint">
+        app:layout_constraintTop_toBottomOf="@+id/search_constraint"
+        app:layout_constraintVertical_bias="0.414">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_ambassador"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="326dp"
+            android:layout_height="200dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.207">
+            app:layout_constraintTop_toTopOf="parent">
 
         </androidx.recyclerview.widget.RecyclerView>
 
