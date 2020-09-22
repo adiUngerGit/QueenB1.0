@@ -25,17 +25,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //scrolling animation
-//        var mScrollView = findViewById<HorizontalScrollView>(R.id.ScrollingImage)
-//
-//        var x = 0;
-//        fun scroll() {
-//            mScrollView.smoothScrollTo(200, 10)
-//            Handler(Looper.getMainLooper()).postDelayed(scroll, 1000)
-//        }
-//
-//        Handler(Looper.getMainLooper()).postDelayed({
-//            mScrollView.smoothScrollTo(200, 10)
-//        }, 1000)
+       /* var viewPager = findViewById<HorizontalScrollView>(R.id.ScrollingImage)
+
+        var x = 0;
+        fun scroll() {
+            mScrollView.smoothScrollTo(200, 10)
+            Handler(Looper.getMainLooper()).postDelayed(scroll, 1000)
+       }
+
+       Handler(Looper.getMainLooper()).postDelayed({
+           mScrollView.smoothScrollTo(200, 10)*/
+     //   }, 1000)
     }
 
     fun FirstPageQuestions(view: View) {

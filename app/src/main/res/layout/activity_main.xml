@@ -54,7 +54,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="270dp"
+                android:layout_width="153dp"
                 android:layout_height="100pt"
                 android:background="@drawable/logo"
                 android:fontFamily="@font/alef"></Button>
