@@ -29,7 +29,7 @@
         android:background="@drawable/button_rounded_corner"
         android:fontFamily="@font/alef"
         android:onClick="nextPage"
-        android:text="יאלה! מתחילים!"
+        android:text="יאללה! מתחילים!"
         android:textColor="@color/lightBackgroundPick"
         android:textColorHint="@color/colorPrimary"
         android:textSize="25sp"
