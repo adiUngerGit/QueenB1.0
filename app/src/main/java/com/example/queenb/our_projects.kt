@@ -104,4 +104,9 @@ class our_projects : AppCompatActivity() {
         }
 
     }
+
+    fun backHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }
