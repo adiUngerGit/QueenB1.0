@@ -19,7 +19,8 @@ import kotlinx.android.synthetic.main.ambassador_cardview.view.*
 class ambassadors : AppCompatActivity() {
 
     var profiles_list = ArrayList<ambassador_profile>()
-
+    var allowed_cities = mutableListOf<String>();
+    var allowed_ages = mutableListOf<String>();
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -37,7 +38,7 @@ class ambassadors : AppCompatActivity() {
         val profile1 = ambassador_profile(
             "שרון",
             "jerusalem",
-            "ח",
+            "14",
             "ברנר",
             "0523515506",
             temp_email
@@ -45,7 +46,7 @@ class ambassadors : AppCompatActivity() {
         val profile2 = ambassador_profile(
             "שירה",
             "jerusalem",
-            "י״א",
+            "15",
             "ברנר",
             "0523515506",
             temp_email
@@ -53,7 +54,7 @@ class ambassadors : AppCompatActivity() {
         val profile3 = ambassador_profile(
             "שיר",
             "jerusalem",
-            "י",
+            "15",
             "ברנר",
             "0523515506",
             temp_email
@@ -61,7 +62,7 @@ class ambassadors : AppCompatActivity() {
         val profile4 = ambassador_profile(
             "שני",
             "jerusalem",
-            "ח",
+            "16",
             "ברנר",
             "0523515506",
             temp_email
@@ -69,11 +70,12 @@ class ambassadors : AppCompatActivity() {
         val profile5 = ambassador_profile(
             "שולמית",
             "jerusalem",
-            "ח",
+            "15",
             "ברנר",
             "0505905057",
             temp_email
         )
+
         profiles_list.add(profile1)
         profiles_list.add(profile2)
         profiles_list.add(profile3)
@@ -175,14 +177,23 @@ class ambassadors : AppCompatActivity() {
 
     }
 
+    // click on search to filtered
     fun searchByFilter(view: View) {
+        var filtered = ArrayList<ambassador_profile>()
 
+        for (profile in profiles_list) {
+            if (profile.city in allowed_cities)
+                if (profile.age in allowed_ages)
+                    filtered.add((profile))
+        }
+        this.allowed_cities = mutableListOf<String>();
+        this.allowed_ages = mutableListOf<String>();
     }
 
+    // click on any check box to filtered
+
     fun onCheckboxClicked(view: View) {
-        var allowed_cities = mutableListOf<String>();
-        var allowed_ages = mutableListOf<String>();
-        Toast.makeText(this, "ENTER", Toast.LENGTH_SHORT).show()
+
         if (view is CheckBox) {
             val checked: Boolean = view.isChecked
 
@@ -204,31 +215,23 @@ class ambassadors : AppCompatActivity() {
                 }
                 R.id.fifteen -> {
                     if (checked) {
-                        allowed_ages.add("fifteen")
+                        allowed_ages.add("15")
                     }
                 }
                 R.id.sixteen -> {
                     if (checked) {
-                        allowed_ages.add("sixteen")
+                        allowed_ages.add("16")
                     }
                 }
                 R.id.fourteen -> {
                     if (checked) {
-                        allowed_ages.add("fourteen")
+                        allowed_ages.add("14")
                     }
                 }
             }
         }
 
-        var filtered = ArrayList<ambassador_profile>()
 
-        for (profile in filtered) {
-            if (profile.city in allowed_cities)
-                if (profile.age in allowed_ages)
-                    filtered.add((profile))
-        }
-
-        this.profiles_list = filtered
 
 
     }
