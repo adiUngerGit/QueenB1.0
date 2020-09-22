@@ -22,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ExpandableTextViewAdapter extends BaseExpandableListAdapter {
     Context context;
     String QUESTION1 = "מי אנחנו?";
-    String QUESTION2 = "מה משמעות השם QuennB?";
+    String QUESTION2 = "מה משמעות השם QueenB?";
     String QUESTION3 = "איפה מתקיימת הפעילות של העמותה?";
     String QUESTION4 = "איך אני נרשמת לתכנית?";
     String QUESTION5 = "איך תתקיים הפעילות אם יהיה סגר?";
