@@ -95,7 +95,7 @@ class our_projects : AppCompatActivity() {
             myTitle.text = rTitle[position]
             myDescription.text = rDescription[position]
             //myLink.setText(rLink[position]);
-            images.setOnClickListener {
+            row.setOnClickListener {
                 val i = Intent(Intent.ACTION_VIEW)
                 i.data = Uri.parse(rLink[position])
                 startActivity(i)

@@ -7,11 +7,39 @@
     android:orientation="vertical"
     tools:context=".our_projects">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הפרוייקטים שלנו"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:paddingTop="8dp"
+        android:fontFamily="@font/alef"
+        android:background="@color/lightGray"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="לחצו על הפרוייקטים כדי להתרשם מהאתרים"
+        android:textColor="@color/darkGray"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:paddingTop="1dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/alef"
+        android:background="@color/lightGray"
+        />
+
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#6AFABEBD">
+        android:background="@color/lightBackgroundPick"
+        android:fontFamily="@font/alef"
+        >
 
     </ListView>
 </LinearLayout>
