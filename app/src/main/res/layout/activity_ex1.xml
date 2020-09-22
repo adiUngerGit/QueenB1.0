@@ -32,7 +32,7 @@
         android:onClick="backHome"
         android:layout_height="32dp"
         android:layout_marginStart="10dp"
-        android:background="@drawable/home_icon"
+        android:background="@drawable/home_icon2"
         app:layout_constraintBottom_toTopOf="@+id/InstructionsBehaind"
         app:layout_constraintEnd_toStartOf="@+id/InstructionsBehaind"
         app:layout_constraintHorizontal_bias="0.0"

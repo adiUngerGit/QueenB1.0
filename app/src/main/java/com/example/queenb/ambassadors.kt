@@ -236,6 +236,10 @@ class ambassadors : AppCompatActivity() {
 
     }
 
+    fun goHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 
 
 }

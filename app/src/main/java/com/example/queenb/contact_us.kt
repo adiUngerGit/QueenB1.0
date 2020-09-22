@@ -1,5 +1,6 @@
 package com.example.queenb
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
@@ -14,6 +15,7 @@ import com.android.volley.VolleyError
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import android.util.Log
+import android.view.View
 import com.example.queenb.R
 
 // ********************************************************************************************
@@ -194,6 +196,11 @@ class contact_us : AppCompatActivity() {
         stringRequest.setRetryPolicy(retryPolicy)
         val queue = Volley.newRequestQueue(this)
         queue.add(stringRequest)
+    }
+
+    fun goHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 
 
