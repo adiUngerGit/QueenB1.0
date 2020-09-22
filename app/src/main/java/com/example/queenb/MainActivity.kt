@@ -81,5 +81,10 @@ fun ambassadors(view: View) {
 
     }
 
+    fun about_as(view: View) {
+        val intent = Intent(this, AboutAs::class.java)
+        startActivity(intent)
+    }
+
 
 }
