@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/descriptionFaqView"
         android:padding="5dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/darkGray"
         android:textSize="14dp"
 
         />
