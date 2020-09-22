@@ -12,7 +12,7 @@
     <Button
         android:layout_width="35dp"
         android:layout_height="32dp"
-        android:background="@drawable/home_icon"
+        android:background="@drawable/home_icon2"
         android:onClick="backHome"
         app:layout_constraintBottom_toTopOf="@+id/code"
         app:layout_constraintEnd_toEndOf="parent"

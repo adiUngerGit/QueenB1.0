@@ -5,7 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightGray"
     tools:context=".our_projects">
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:onClick="backHome"
+        android:layout_gravity="right"
+        android:background="@drawable/home_icon2"></ImageView>
 
     <TextView
         android:layout_width="match_parent"
@@ -17,6 +26,8 @@
         android:paddingTop="8dp"
         android:fontFamily="@font/alef"
         android:background="@color/lightGray"
+
+
         />
 
     <TextView
