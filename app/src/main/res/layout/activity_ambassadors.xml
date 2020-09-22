@@ -144,12 +144,14 @@
                     android:id="@+id/tel_aviv"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
+                    android:onClick="onCheckboxClicked"
                     android:text="תל אביב"></CheckBox>
 
                 <CheckBox
                     android:id="@+id/haifa"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
+                    android:onClick="onCheckboxClicked"
                     android:text="חיפה"></CheckBox>
 
             </LinearLayout>

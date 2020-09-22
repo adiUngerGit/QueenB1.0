@@ -182,7 +182,7 @@ class ambassadors : AppCompatActivity() {
     fun onCheckboxClicked(view: View) {
         var allowed_cities = mutableListOf<String>();
         var allowed_ages = mutableListOf<String>();
-
+        Toast.makeText(this, "ENTER", Toast.LENGTH_SHORT).show()
         if (view is CheckBox) {
             val checked: Boolean = view.isChecked
 
