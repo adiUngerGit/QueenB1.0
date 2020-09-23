@@ -21,6 +21,7 @@ class ambassadors : AppCompatActivity() {
     var profiles_list = ArrayList<ambassador_profile>()
     var allowed_cities = mutableListOf<String>();
     var allowed_ages = mutableListOf<String>();
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -34,53 +35,58 @@ class ambassadors : AppCompatActivity() {
     }
 
     private fun create_ambassators() {
-        val temp_email = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
+       // val tempInstagram = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
         val profile1 = ambassador_profile(
             "מגל אופיר",
             "ירושלים",
             "15",
             "ברנר",
             "'0528982213",
-            temp_email
+            "",
+        "התכנית גרמה לי להתאהב במדעי המחשב"
         )
         val profile2 = ambassador_profile(
             "סביון פלורנס נחמן",
             "ירושלים",
             "15.5",
             "ברנר",
-            "'0552281405",
-            temp_email
+            "0552281405",
+            "@savyon_nachman_",
+            "התכנית גרמה לי להתאהב במדעי המחשב, שזה תחום שלא הרבה בנות הולכות אליו"
+
         )
         val profile3 = ambassador_profile(
-            "שיר",
-            "jerusalem",
+            "גלי יפת",
+            "ירושלים",
             "15",
             "ברנר",
-            "0523515506",
-            temp_email
+            "0587655524",
+            "",
+            "כי זה פותח כל כך הרבה דלתות בחיים ומראה עולם כל כך גדול ומעניין, הזדמנות ענקית לכל נערה להתאהב!"
+
         )
-        val profile4 = ambassador_profile(
-            "שני",
-            "jerusalem",
-            "16",
-            "ברנר",
-            "0523515506",
-            temp_email
-        )
-        val profile5 = ambassador_profile(
-            "שולמית",
-            "jerusalem",
-            "15",
-            "ברנר",
-            "0505905057",
-            temp_email
-        )
+//        val profile4 = ambassador_profile(
+//            "שני",
+//            "jerusalem",
+//            "16",
+//            "ברנר",
+//            "0523515506",
+//
+//        )
+//        val profile5 = ambassador_profile(
+//            "שולמית",
+//            "jerusalem",
+//            "15",
+//            "ברנר",
+//            "0505905057",
+//
+//        )
 
         profiles_list.add(profile1)
         profiles_list.add(profile2)
         profiles_list.add(profile3)
-        profiles_list.add(profile4)
-        profiles_list.add(profile5)
+//        profiles_list.add(profile4)
+//        profiles_list.add(profile5)
     }
 
     class MyAddapter(val arrayList: ArrayList<ambassador_profile>, val context: Context) :
@@ -95,6 +101,8 @@ class ambassadors : AppCompatActivity() {
                 itemView.profile_name.text = profile.name
                 itemView.profile_description.text =
                     profile.city + ", " + profile.age + ", " + profile.school
+               // itemView.instagram.text = profile.instagram
+               // itemView.sentence.text = profile.sentence
 
             }
         }
@@ -126,9 +134,9 @@ class ambassadors : AppCompatActivity() {
 
             //if  email button pressed:
 
-            holder.itemView.email_button.setOnClickListener {
-                send_email(arrayList[position].instagram)
-            }
+//            holder.itemView.email_button.setOnClickListener {
+//                send_email(arrayList[position].instagram)
+//            }
 
 
         }
@@ -186,8 +194,12 @@ class ambassadors : AppCompatActivity() {
                 if (profile.age in allowed_ages)
                     filtered.add((profile))
         }
-        this.allowed_cities = mutableListOf<String>();
-        this.allowed_ages = mutableListOf<String>();
+
+        val myAddapter = MyAddapter(filtered, this)
+
+        recycler_ambassador.layoutManager = LinearLayoutManager(this)
+        recycler_ambassador.adapter = myAddapter
+
     }
 
     // click on any check box to filtered
@@ -200,17 +212,17 @@ class ambassadors : AppCompatActivity() {
             when (view.id) {
                 R.id.jerusalem -> {
                     if (checked) {
-                        allowed_cities.add("jerusalem")
+                        allowed_cities.add("ירושלים")
                     }
                 }
                 R.id.tel_aviv -> {
                     if (checked) {
-                       allowed_cities.add("tel_aviv")
+                       allowed_cities.add("תל אביב")
                     }
                 }
                 R.id.haifa -> {
                     if (checked) {
-                        allowed_cities.add("haifa")
+                        allowed_cities.add("חיפה")
                     }
                 }
                 R.id.fifteen -> {

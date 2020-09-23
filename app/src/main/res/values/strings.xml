@@ -41,4 +41,16 @@
         בכך אנחנו מקוות לייצר קבוצה חברתית מגובשת של נשים מוכשרות וחזקות
     </string>
 
+    <string-array name="city">
+        <item>ירושלים</item>
+        <item>תל אביב</item>
+        <item>חיפה</item>
+    </string-array>
+<string name="city"></string>
+    <string name="age"></string>
+    <string-array name="age">
+        <item>ירושלים</item>
+        <item>תל אביב</item>
+        <item>חיפה</item>
+    </string-array>
 </resources>

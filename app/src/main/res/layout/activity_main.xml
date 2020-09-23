@@ -26,45 +26,45 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
+                android:layout_width="258dp"
+                android:layout_height="100pt"
                 android:layout_gravity="center"
                 android:background="@drawable/logo"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
                 android:layout_width="258dp"
-                android:layout_height="229dp"
+                android:layout_height="100pt"
+                android:layout_gravity="center"
                 android:background="@drawable/a"
-                android:layout_gravity="center"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
                 android:layout_width="330dp"
                 android:layout_height="100pt"
+                android:layout_gravity="center"
                 android:background="@drawable/b"
-                android:layout_gravity="center"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
                 android:layout_width="330dp"
                 android:layout_height="100pt"
+                android:layout_gravity="center"
                 android:background="@drawable/c"
-                android:layout_gravity="center"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
                 android:layout_width="330dp"
                 android:layout_height="100pt"
+                android:layout_gravity="center"
                 android:background="@drawable/d"
-                android:layout_gravity="center"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
                 android:layout_width="330dp"
                 android:layout_height="100pt"
-                android:background="@drawable/e"
                 android:layout_gravity="center"
+                android:background="@drawable/e"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
@@ -125,7 +125,7 @@
         android:layout_width="216dp"
         android:layout_height="37dp"
         android:background="@drawable/round_corner_temp_color"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#F4DCDC"
         android:fontFamily="@font/alef"
         android:onClick="about_as"
         android:text="קצת עלינו"
@@ -189,15 +189,13 @@
         android:id="@+id/textView16"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginStart="160dp"
         android:background="@drawable/facebook"
         android:onClick="enterFacebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView19"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <Button
         android:id="@+id/textView7"
@@ -247,7 +245,6 @@
         android:id="@+id/textView19"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="136dp"
         android:background="@drawable/instagram"
         android:onClick="enterInstegram"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -283,241 +280,241 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n"התכנית גרמה לי להתאהב במדעי המחשב"'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n"התכנית גרמה לי להתאהב במדעי המחשב"'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~אופיר, י' , גבעת ישעיהו~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~אופיר, י' , גבעת ישעיהו~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" זה פותח כל כך הרבה דלתות בחיים"'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" זה פותח כל כך הרבה דלתות בחיים"'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~גלי, י', ירושלים~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~גלי, י', ירושלים~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" הכיף להכיר עוד בנות שנמצאות איתך באותו ראש"'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" הכיף להכיר עוד בנות שנמצאות איתך באותו ראש"'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~חנה, י', ירושלים~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~חנה, י', ירושלים~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" המדריכות המדהימות, הקבוצה המגובשת"'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" המדריכות המדהימות, הקבוצה המגובשת"'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~אליזבת, י', ירושלים~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~אליזבת, י', ירושלים~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n"  כיף ללמוד את החומר בצורה כל כך כיפיית ולהגיע לכיתה י כבר בשיעור הראשון את יכולה לעזור לחברות שמתקשות"'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n"  כיף ללמוד את החומר בצורה כל כך כיפיית ולהגיע לכיתה י כבר בשיעור הראשון את יכולה לעזור לחברות שמתקשות"'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~אליזבת, י', ירושלים~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~אליזבת, י', ירושלים~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" יש אווירה כיפית, שלא צריך באמת להספיק איזה חומר למבחן"'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" יש אווירה כיפית, שלא צריך באמת להספיק איזה חומר למבחן"'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~אופיר, י', גבעת ישעיהו~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~אופיר, י', גבעת ישעיהו~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" עוזר ברמות לביטחון העצמי, מכירים חברות לחיים "'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" עוזר ברמות לביטחון העצמי, מכירים חברות לחיים "'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~סתיו, י'א, אורה~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~סתיו, י'א, אורה~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" אהבתי ללמוד דברים חדשים ולפגוש חברות חדשות "'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" אהבתי ללמוד דברים חדשים ולפגוש חברות חדשות "'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~מאיה, ט, חיפה~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~מאיה, ט, חיפה~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" כדי להעשיר את הידע ולדעת תחומים אחרים חוץ ממה שלומדים בבית הספר "'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" כדי להעשיר את הידע ולדעת תחומים אחרים חוץ ממה שלומדים בבית הספר "'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~נעה, ט, יוקנעם עלית~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~נעה, ט, יוקנעם עלית~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" הכי אהבתי שהתוכן היה רלוונטי, היחס האישי והקבוצה המדהימה שהיתה לנו! "'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" הכי אהבתי התוכן היה רלוונטי, היחס האישי והקבוצה המדהימה שהיתה לנו! "'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~חנה, י' , ירושלים~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~חנה, י' , ירושלים~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" ממש כיף ללמוד איך לתכנת אתר אינטרנט ולראות התוצאות פועלות - בעיקר כשאת מקבלת משימה ועושה אותה לבד! "'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" ממש כיף ללמוד איך לתכנת אתר אינטרנט ולראות התוצאות פועלות - בעיקר כשאת מקבלת משימה ועושה אותה לבד! "'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~מאיה, ט' , חיפה~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~מאיה, ט' , חיפה~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text='\n" אני עכשיו במגמת מדעי המחשב כולם נורא מסתבכים רק אני יושבת רגל על רגל כי סיימתי את כל התרגילים "'
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text='\n" אני עכשיו במגמת מדעי המחשב כולם נורא מסתבכים רק אני יושבת רגל על רגל כי סיימתי את כל התרגילים "'
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alef"
-                android:scrollbarSize="10dp"
-                android:text="~סביון, י' , ירושלים~\n"
-                android:textAlignment="center"
-                android:textSize="15dp"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alef"
+                        android:scrollbarSize="10dp"
+                        android:text="~סביון, י' , ירושלים~\n"
+                        android:textAlignment="center"
+                        android:textSize="15dp"></TextView>
 
-        </LinearLayout>
+                </LinearLayout>
     </ScrollView>
 
     <TextView

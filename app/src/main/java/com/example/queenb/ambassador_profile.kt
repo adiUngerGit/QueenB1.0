@@ -6,7 +6,8 @@ class ambassador_profile(
     val age: String,
     val school: String,
     val phone: String,
-    val instagram: String
+    val instagram: String,
+    val sentence: String
 ) {
 
 //    var image = 0 //todo  ruti add img

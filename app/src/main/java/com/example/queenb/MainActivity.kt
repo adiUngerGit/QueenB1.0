@@ -3,17 +3,12 @@ package com.example.queenb
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.HorizontalScrollView
 import android.widget.RatingBar
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,16 +20,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //scrolling animation
-       /* var viewPager = findViewById<HorizontalScrollView>(R.id.ScrollingImage)
+        var viewPager = findViewById<HorizontalScrollView>(R.id.ScrollingImage)
+     //   viewPager.smoothScrollTo(0, 1);
 
-        var x = 0;
-        fun scroll() {
-            mScrollView.smoothScrollTo(200, 10)
-            Handler(Looper.getMainLooper()).postDelayed(scroll, 1000)
-       }
-
-       Handler(Looper.getMainLooper()).postDelayed({
-           mScrollView.smoothScrollTo(200, 10)*/
+//        var x = 0;
+//        fun scroll() {
+//            mScrollView.smoothScrollTo(200, 10)
+//            Handler(Looper.getMainLooper()).postDelayed(scroll, 1000)
+//       }
+//
+//       Handler(Looper.getMainLooper()).postDelayed({
+//           mScrollView.smoothScrollTo(200, 10)*/
      //   }, 1000)
     }
 

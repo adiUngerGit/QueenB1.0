@@ -33,8 +33,6 @@
             android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-
-
             android:fontFamily="@font/alef"
             android:text="name here"
 
@@ -54,21 +52,14 @@
 
             />
 
-        <ImageView
-            android:id="@+id/email_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/profile_description"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/instagram" />
+
 
         <ImageView
             android:id="@+id/whatsapp_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_below="@id/profile_description"
-            android:layout_marginStart="55dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/whatsapp_icon2" />
 
