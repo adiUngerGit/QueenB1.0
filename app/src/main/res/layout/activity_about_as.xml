@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightPink"
+    android:background="@color/lightBackgroundPick"
     tools:context=".AboutAs">
 
 
@@ -32,13 +32,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.050000012"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo2" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="317dp"
         android:layout_height="443dp"
-        android:background="@drawable/my_border_white"
+        android:background="@drawable/my_border"
         android:fontFamily="@font/alef"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
