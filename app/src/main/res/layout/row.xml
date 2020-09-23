@@ -15,6 +15,7 @@
         android:layout_height="171dp"
         android:padding="16dp"
         android:background="@drawable/my_border"
+        android:fontFamily="@font/alef"
         >
 
         <ImageView
