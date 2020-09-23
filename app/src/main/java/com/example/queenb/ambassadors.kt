@@ -36,19 +36,19 @@ class ambassadors : AppCompatActivity() {
     private fun create_ambassators() {
         val temp_email = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
         val profile1 = ambassador_profile(
-            "שרון",
-            "jerusalem",
-            "14",
+            "מגל אופיר",
+            "ירושלים",
+            "15",
             "ברנר",
-            "0523515506",
+            "'0528982213",
             temp_email
         )
         val profile2 = ambassador_profile(
-            "שירה",
-            "jerusalem",
-            "15",
+            "סביון פלורנס נחמן",
+            "ירושלים",
+            "15.5",
             "ברנר",
-            "0523515506",
+            "'0552281405",
             temp_email
         )
         val profile3 = ambassador_profile(
@@ -127,7 +127,7 @@ class ambassadors : AppCompatActivity() {
             //if  email button pressed:
 
             holder.itemView.email_button.setOnClickListener {
-                send_email(arrayList[position].email)
+                send_email(arrayList[position].instagram)
             }
 
 

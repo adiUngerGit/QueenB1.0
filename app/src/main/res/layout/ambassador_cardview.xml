@@ -61,7 +61,7 @@
             android:layout_below="@id/profile_description"
             android:layout_marginStart="5dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/email_icon2" />
+            android:src="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/whatsapp_button"
