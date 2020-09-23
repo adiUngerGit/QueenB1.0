@@ -10,8 +10,8 @@
 
     <HorizontalScrollView
         android:id="@+id/ScrollingImage"
-        android:layout_width="451dp"
-        android:layout_height="217dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,95 +26,96 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="258dp"
-                android:layout_height="100pt"
+                android:layout_width="162dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
                 android:background="@drawable/logo"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
-                android:layout_width="258dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/a"
+                android:background="@drawable/pic01"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/b"
+                android:background="@drawable/pic02"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/c"
+                android:background="@drawable/pic03"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/d"
+                android:background="@drawable/pic0"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/e"
+                android:background="@drawable/pic1"
                 android:fontFamily="@font/alef"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/f"></Button>
+                android:background="@drawable/pic2"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/g"></Button>
+                android:background="@drawable/pic3"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/h"></Button>
+                android:background="@drawable/pic4"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/i"></Button>
+                android:background="@drawable/pic5"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/j"></Button>
+                android:background="@drawable/pic6"></Button>
 
             <Button
-                android:layout_width="257dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/k"></Button>
+                android:background="@drawable/pic7"></Button>
 
             <Button
-                android:layout_width="330dp"
-                android:layout_height="100pt"
+                android:layout_width="243dp"
+                android:layout_height="162dp"
                 android:layout_gravity="center"
-                android:background="@drawable/last"></Button>
+                android:background="@drawable/pic8"></Button>
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+            <Button
+                android:layout_width="243dp"
+                android:layout_height="162dp"
+                android:layout_gravity="center"
+                android:background="@drawable/pic9"></Button>
+
+
 
         </LinearLayout>
     </HorizontalScrollView>
