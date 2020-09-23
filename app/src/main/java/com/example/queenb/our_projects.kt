@@ -105,7 +105,7 @@ class our_projects : AppCompatActivity() {
 
     }
 
-    fun backHome(view: View) {
+    fun goHome(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
