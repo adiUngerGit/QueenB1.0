@@ -49,6 +49,7 @@
             android:textSize="15dp"
             android:textAlignment="viewEnd"
             android:fontFamily="@font/alef"
+            android:textStyle="bold"
 
             />
 

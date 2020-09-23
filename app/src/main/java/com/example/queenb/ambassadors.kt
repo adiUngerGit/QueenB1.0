@@ -39,54 +39,127 @@ class ambassadors : AppCompatActivity() {
         val profile1 = ambassador_profile(
             "מגל אופיר",
             "ירושלים",
-            "15",
-            "ברנר",
+            "י'",
             "'0528982213",
             "",
-        "התכנית גרמה לי להתאהב במדעי המחשב"
+        "~ התכנית גרמה לי להתאהב במדעי המחשב ~"
         )
         val profile2 = ambassador_profile(
             "סביון פלורנס נחמן",
             "ירושלים",
-            "15.5",
-            "ברנר",
+            "י'",
             "0552281405",
-            "@savyon_nachman_",
-            "התכנית גרמה לי להתאהב במדעי המחשב, שזה תחום שלא הרבה בנות הולכות אליו"
+            "https://www.instagram.com/savyon_nachman_/",
+            "~ התאהבתי במדעי המחשב ~"
 
         )
         val profile3 = ambassador_profile(
             "גלי יפת",
             "ירושלים",
-            "15",
-            "ברנר",
+            "י'",
             "0587655524",
             "",
-            "כי זה פותח כל כך הרבה דלתות בחיים ומראה עולם כל כך גדול ומעניין, הזדמנות ענקית לכל נערה להתאהב!"
+            "~ הזדמנות ענקית להתאהב ~"
+
 
         )
-//        val profile4 = ambassador_profile(
-//            "שני",
-//            "jerusalem",
-//            "16",
-//            "ברנר",
-//            "0523515506",
-//
-//        )
-//        val profile5 = ambassador_profile(
-//            "שולמית",
-//            "jerusalem",
-//            "15",
-//            "ברנר",
-//            "0505905057",
-//
-//        )
+        val profile4 = ambassador_profile(
+            "אליזבת בראודסקי",
+            "ירושלים",
+            "י'",
+            "0534212372",
+            "https://www.instagram.com/jackjack_167/",
+            "~ נהנתי ללמוד את החומר בצורה כל כך כייפית ~"
+        )
+
+
+        val profile5 = ambassador_profile(
+            "חנה שטילמן",
+            "ירושלים",
+            "י'",
+            "0585372245",
+            "https://www.instagram.com/hannah._.1200/",
+            "~ הכרתי בנות באותו ראש ועברנו תהליך ביחד ~"
+        )
+
+        val profile6 = ambassador_profile(
+            "ליה כנרי",
+            "תל אביב",
+            "י'",
+            "0585551354",
+            "https://www.instagram.com/wehateliya_/?igshid=33g9xc8ja6e0",
+            "~ נפתחתי למשהו שפחדתי ממנו ~"
+        )
+
+        val profile7 = ambassador_profile(
+            "יולי רוזנר",
+            "תל אביב",
+            "י'",
+            "0532741014",
+            "",
+            "~ הזדמנות עצומה לקראת העתיד ~"
+        )
+
+        val profile8 = ambassador_profile(
+            "סתיו חייקה",
+            "ירושלים",
+            "י״א",
+            "0548170365",
+            "https://www.instagram.com/stavhaike/",
+            "~ גורם לך להאמין שאת יכולה לעשות הכל ~"
+        )
+
+        val profile9 = ambassador_profile(
+            "נועה ניר",
+            "חיפה",
+            "ט'",
+            "0543094460",
+            "",
+            "~ מעשיר את הידע ופותח אותך לתחומים חדשים ~"
+        )
+        val profile10 = ambassador_profile(
+            "מאיה סמובסקי",
+            "חיפה",
+            "ט'",
+            "0586714286",
+            "",
+            "~ נהנתי לתכנת אתר אינטרנט ולראות אותו פועל ~"
+        )
+        val profile11 = ambassador_profile(
+            "עמליה סוכרי",
+            "תל אביב",
+            "י'",
+            "0527202019",
+            "https://www.instagram.com/amalia.sucary/",
+            "~ זה פותח דלתות בהמשך ~"
+        )
+
+        val profile12 = ambassador_profile(
+            "יובל בן עזרא",
+            "חיפה",
+            "ט'",
+            "0549538121",
+            "https://www.instagram.com/doby_fangirl/?r=nametag",
+            "~ הכי אהבתי את המדריכות והחברות שהכרתי ~"
+        )
+
+
+
+
+
 
         profiles_list.add(profile1)
+        profiles_list.add(profile4)
         profiles_list.add(profile2)
+        profiles_list.add(profile5)
+        profiles_list.add(profile6)
+        profiles_list.add(profile7)
         profiles_list.add(profile3)
-//        profiles_list.add(profile4)
-//        profiles_list.add(profile5)
+        profiles_list.add(profile8)
+        profiles_list.add(profile9)
+        profiles_list.add(profile10)
+        profiles_list.add(profile11)
+        profiles_list.add(profile12)
     }
 
     class MyAddapter(val arrayList: ArrayList<ambassador_profile>, val context: Context) :
@@ -100,8 +173,9 @@ class ambassadors : AppCompatActivity() {
             fun bindItems(profile: ambassador_profile) {
                 itemView.profile_name.text = profile.name
                 itemView.profile_description.text =
-                    profile.city + ", " + profile.age + ", " + profile.school
-               // itemView.instagram.text = profile.instagram
+                    profile.city + ", " + profile.grade
+                itemView.profile_sentence.text=profile.sentence
+                // itemView.instagram.text = profile.instagram
                // itemView.sentence.text = profile.sentence
 
             }
@@ -191,7 +265,7 @@ class ambassadors : AppCompatActivity() {
 
         for (profile in profiles_list) {
             if (profile.city in allowed_cities)
-                if (profile.age in allowed_ages)
+                if (profile.grade in allowed_ages)
                     filtered.add((profile))
         }
 
