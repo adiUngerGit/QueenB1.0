@@ -35,14 +35,14 @@ class ambassadors : AppCompatActivity() {
     }
 
     private fun create_ambassators() {
-       // val tempInstagram = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
+        // val tempInstagram = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
         val profile1 = ambassador_profile(
             "מגל אופיר",
             "ירושלים",
             "י'",
             "'0528982213",
             "",
-        "~ התכנית גרמה לי להתאהב במדעי המחשב ~"
+            "~ התכנית גרמה לי להתאהב במדעי המחשב ~"
         )
         val profile2 = ambassador_profile(
             "סביון פלורנס נחמן",
@@ -161,7 +161,6 @@ class ambassadors : AppCompatActivity() {
         profiles_list.add(profile11)
         profiles_list.add(profile12)
     }
-
     class MyAddapter(val arrayList: ArrayList<ambassador_profile>, val context: Context) :
         RecyclerView.Adapter<MyAddapter.ViewHolder>() {
         val ISRAEL_AREA_CODE = "972"
@@ -174,9 +173,8 @@ class ambassadors : AppCompatActivity() {
                 itemView.profile_name.text = profile.name
                 itemView.profile_description.text =
                     profile.city + ", " + profile.grade
-                itemView.profile_sentence.text=profile.sentence
-                // itemView.instagram.text = profile.instagram
-               // itemView.sentence.text = profile.sentence
+               // itemView.instagram.text = profile.instagram
+                itemView.profile_sentence.text = profile.sentence
 
             }
         }
@@ -274,6 +272,7 @@ class ambassadors : AppCompatActivity() {
         recycler_ambassador.layoutManager = LinearLayoutManager(this)
         recycler_ambassador.adapter = myAddapter
 
+        openBox(View(this))
     }
 
     // click on any check box to filtered
@@ -292,26 +291,37 @@ class ambassadors : AppCompatActivity() {
                 R.id.tel_aviv -> {
                     if (checked) {
                        allowed_cities.add("תל אביב")
+                    } else {
+                        allowed_cities.remove("תל אביב")
                     }
                 }
                 R.id.haifa -> {
                     if (checked) {
                         allowed_cities.add("חיפה")
+                    } else {
+                        allowed_cities.remove("חיפה")
                     }
                 }
                 R.id.fifteen -> {
                     if (checked) {
-                        allowed_ages.add("15")
+                        allowed_ages.add("א\"י")
+                    } else {
+                        allowed_ages.remove("א\"י")
                     }
                 }
                 R.id.sixteen -> {
                     if (checked) {
-                        allowed_ages.add("16")
+                        allowed_ages.add("ב\"י")
+                    } else {
+                        allowed_ages.remove("ב\"י")
                     }
                 }
                 R.id.fourteen -> {
                     if (checked) {
-                        allowed_ages.add("14")
+                        allowed_ages.add("י'")
+                    } else {
+                        allowed_ages.remove("י'")
+
                     }
                 }
             }
@@ -327,5 +337,20 @@ class ambassadors : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun openBox(view: View) {
+        var serch =
+            findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.search_constraint)
+        var parms = serch.layoutParams;
 
-}
+        if (parms.height > 10) {
+            parms.height = 2
+        } else {
+            parms.height = 700
+
+        }
+        serch.setLayoutParams(parms);
+
+    }
+
+
+    }

@@ -8,106 +8,36 @@
     tools:context=".ambassadors">
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/search_constraint"
+        android:layout_width="292dp"
+        android:layout_height="2dp"
 
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/queenb_icon3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_rounded_light_gray"
 
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="10dp"
-            android:onClick="goHome"
-            android:src="@drawable/home_icon2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:id="@+id/title_ambassador"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/search_constraint"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/alef"
-            android:text="השגרירות שלנו"
-            android:textSize="30dp"
-            android:textStyle="bold"
-
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/alef"
-            android:text="התייעצו עם בנות שהשתתפו כבר בתוכנית"
-            android:textSize="20dp"
-            android:textStyle="bold"
-
-
-            />
-
-    </LinearLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/search_constraint"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-
-        android:background="@drawable/bg_rounded_light_gray"
-        android:gravity="center"
-        android:orientation="horizontal"
-
-        app:layout_constraintBottom_toTopOf="@+id/general_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_ambassador">
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="301dp"
-            android:layout_height="20dp"
+            android:layout_width="297dp"
+            android:layout_height="21dp"
             android:fontFamily="@font/alef"
-            android:gravity="top|center"
-            android:text="חיפשי לפי עיר וגיל"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintBottom_toTopOf="@+id/allCheckBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/allCheckBox"
             android:layout_width="260dp"
             android:layout_height="160dp"
             android:orientation="horizontal"
@@ -177,7 +107,7 @@
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:onClick="onCheckboxClicked"
-                    android:text="14"></CheckBox>
+                    android:text="י'"></CheckBox>
 
                 <CheckBox
                     android:id="@+id/fifteen"
@@ -186,7 +116,7 @@
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:onClick="onCheckboxClicked"
-                    android:text="15"></CheckBox>
+                    android:text="יא"></CheckBox>
 
                 <CheckBox
                     android:id="@+id/sixteen"
@@ -195,7 +125,7 @@
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:onClick="onCheckboxClicked"
-                    android:text="16"></CheckBox>
+                    android:text="יב"></CheckBox>
 
             </LinearLayout>
         </LinearLayout>
@@ -211,7 +141,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/allCheckBox">
 
         </ImageView>
 
@@ -219,28 +149,137 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/general_layout"
-        android:layout_width="353dp"
-        android:layout_height="230dp"
-        android:layout_marginBottom="30dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/queenb_icon3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="goHome"
+            android:src="@drawable/home_icon2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/title_ambassador"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_constraint"
-        app:layout_constraintVertical_bias="0.414">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alef"
+            android:text="השגרירות שלנו"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alef"
+            android:text="התייעצו עם בנות שהשתתפו כבר בתוכנית"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <!--    <ExpandableListView-->
+    <!--        android:id="@+id/expendableList"-->
+    <!--        android:layout_width="351dp"-->
+    <!--        android:layout_height="137dp"-->
+    <!--        android:layout_marginBottom="428dp"-->
+    <!--        android:divider="@android:color/background_light"-->
+    <!--        android:dividerHeight="0.5dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        tools:layout_editor_absoluteX="30dp" />-->
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="290dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rounded_light_gray"
+        android:fontFamily="@font/alef"
+        android:gravity="center"
+        android:hint="חיפשי לפי עיר וגיל"
+        android:onClick="openBox"
+        app:layout_constraintBottom_toTopOf="@+id/search_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_ambassador">
+
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="21dp"
+        android:foregroundGravity="bottom|center"
+        android:onClick="searchByFilter"
+        android:src="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12">
+
+    </ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/general_layout"
+        android:layout_width="369dp"
+        android:layout_height="427dp"
+
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_constraint">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_ambassador"
-            android:layout_width="326dp"
-            android:layout_height="200dp"
+            android:layout_width="298dp"
+            android:layout_height="356dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.355"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258">
 
         </androidx.recyclerview.widget.RecyclerView>
 
