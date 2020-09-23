@@ -20,7 +20,7 @@
             android:layout_width="110dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/queenb_icon"
+            android:src="@drawable/logo2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
