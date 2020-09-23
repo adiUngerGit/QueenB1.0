@@ -290,7 +290,7 @@ class ambassadors : AppCompatActivity() {
                 }
                 R.id.tel_aviv -> {
                     if (checked) {
-                       allowed_cities.add("תל אביב")
+                        allowed_cities.add("תל אביב")
                     } else {
                         allowed_cities.remove("תל אביב")
                     }
@@ -304,16 +304,16 @@ class ambassadors : AppCompatActivity() {
                 }
                 R.id.fifteen -> {
                     if (checked) {
-                        allowed_ages.add("א\"י")
+                        allowed_ages.add("י״א")
                     } else {
-                        allowed_ages.remove("א\"י")
+                        allowed_ages.remove("י״א")
                     }
                 }
                 R.id.sixteen -> {
                     if (checked) {
-                        allowed_ages.add("ב\"י")
+                        allowed_ages.add("י״ב")
                     } else {
-                        allowed_ages.remove("ב\"י")
+                        allowed_ages.remove("י״ב")
                     }
                 }
                 R.id.fourteen -> {
@@ -321,6 +321,22 @@ class ambassadors : AppCompatActivity() {
                         allowed_ages.add("י'")
                     } else {
                         allowed_ages.remove("י'")
+
+                    }
+                }
+                R.id.thirteen -> {
+                    if (checked) {
+                        allowed_ages.add("ט'")
+                    } else {
+                        allowed_ages.remove("ט'")
+
+                    }
+                }
+                R.id.thirteen -> {
+                    if (checked) {
+                        allowed_ages.add("ח'")
+                    } else {
+                        allowed_ages.remove("ח'")
 
                     }
                 }
@@ -345,7 +361,7 @@ class ambassadors : AppCompatActivity() {
         if (parms.height > 10) {
             parms.height = 2
         } else {
-            parms.height = 700
+            parms.height = 1000
 
         }
         serch.setLayoutParams(parms);

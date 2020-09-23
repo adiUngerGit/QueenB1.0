@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/search_constraint"
-        android:layout_width="292dp"
+        android:layout_width="286dp"
         android:layout_height="2dp"
 
         android:layout_marginTop="20dp"
@@ -38,8 +38,8 @@
 
         <LinearLayout
             android:id="@+id/allCheckBox"
-            android:layout_width="260dp"
-            android:layout_height="160dp"
+            android:layout_width="274dp"
+            android:layout_height="237dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +49,8 @@
             app:layout_constraintVertical_bias="0.289">
 
             <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="160dp"
+                android:layout_width="143dp"
+                android:layout_height="178dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -89,7 +89,7 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="160dp"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -116,7 +116,25 @@
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:onClick="onCheckboxClicked"
-                    android:text="יא"></CheckBox>
+                    android:text="י״א"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/thirteen"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="ט'"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/twelve"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="ח'"></CheckBox>
 
                 <CheckBox
                     android:id="@+id/sixteen"
@@ -125,7 +143,7 @@
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:onClick="onCheckboxClicked"
-                    android:text="יב"></CheckBox>
+                    android:text="י״ב"></CheckBox>
 
             </LinearLayout>
         </LinearLayout>
