@@ -46,7 +46,7 @@
         <item>תל אביב</item>
         <item>חיפה</item>
     </string-array>
-<string name="city"></string>
+    <string name="city"></string>
     <string name="age"></string>
     <string-array name="age">
         <item>ירושלים</item>
