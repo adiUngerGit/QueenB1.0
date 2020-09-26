@@ -16,11 +16,12 @@
         android:id="@+id/feqTitleView"
         android:paddingEnd="?android:expandableListPreferredChildPaddingLeft"
         android:paddingStart="?android:expandableListPreferredChildPaddingLeft"
-
         android:minHeight="40dp"
+
         android:fontFamily="@font/alef"
         android:textColor="@color/darkGray"
-        android:background="@color/darkPink"
+        android:background="@drawable/round_corner_temp_color"
+        android:backgroundTint="@color/darkPink"
         android:textSize="20dp"
         android:textAlignment="center"
         android:gravity="center"
