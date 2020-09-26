@@ -12,6 +12,7 @@
         android:id="@+id/descriptionFaqView"
         android:padding="5dp"
         android:textColor="@color/darkGray"
+        android:fontFamily="@font/alef"
         android:textSize="14dp"
 
         />
