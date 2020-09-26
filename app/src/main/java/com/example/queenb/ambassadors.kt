@@ -16,6 +16,9 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_ambassadors.*
 import kotlinx.android.synthetic.main.ambassador_cardview.view.*
 
+
+
+
 class ambassadors : AppCompatActivity() {
 
     var profiles_list = ArrayList<ambassador_profile>()
@@ -200,9 +203,14 @@ class ambassadors : AppCompatActivity() {
                 val url = URL_PREFIX + number_with_area + URL_TEXT
                 SendWhatsappMsg(url)
 
-
             }
 
+            // if instegram pressed :
+
+            holder.itemView.instagram_button.setOnClickListener {
+
+
+            }
 
             //if  email button pressed:
 
@@ -230,6 +238,9 @@ class ambassadors : AppCompatActivity() {
 
         }
 
+        fun GoInstegram(url: String) {
+
+        }
 
         fun SendWhatsappMsg(url: String) {
 
@@ -309,13 +320,13 @@ class ambassadors : AppCompatActivity() {
                         allowed_ages.remove("י״א")
                     }
                 }
-                R.id.sixteen -> {
-                    if (checked) {
-                        allowed_ages.add("י״ב")
-                    } else {
-                        allowed_ages.remove("י״ב")
-                    }
-                }
+//                R.id.sixteen -> {
+//                    if (checked) {
+//                        allowed_ages.add("י״ב")
+//                    } else {
+//                        allowed_ages.remove("י״ב")
+//                    }
+//                }
                 R.id.fourteen -> {
                     if (checked) {
                         allowed_ages.add("י'")
@@ -359,12 +370,37 @@ class ambassadors : AppCompatActivity() {
         var parms = serch.layoutParams;
 
         if (parms.height > 10) {
-            parms.height = 2
+            parms.height = 1
         } else {
-            parms.height = 1000
+            parms.height = 800
 
         }
-        serch.setLayoutParams(parms);
+
+        var ambassadors =
+            findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.general_layout)
+        var parms2 = ambassadors.layoutParams;
+
+        if (parms2.height > 350) {
+            parms2.height = 350
+        } else {
+            parms2.height = 1100
+
+        }
+        ambassadors.setLayoutParams(parms2);
+
+        recycler_ambassador
+
+        var recycler_ambassador =
+            findViewById<androidx.recyclerview.widget.RecyclerView>(R.id.recycler_ambassador)
+        var parms3 = recycler_ambassador.layoutParams;
+
+        if (parms3.height > 350) {
+            parms3.height = 350
+        } else {
+            parms3.height = 1100
+
+        }
+        recycler_ambassador.setLayoutParams(parms3);
 
     }
 
