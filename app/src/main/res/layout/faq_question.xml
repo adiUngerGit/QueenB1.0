@@ -11,19 +11,18 @@
     >
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/feqTitleView"
-        android:paddingEnd="?android:expandableListPreferredChildPaddingLeft"
-        android:paddingStart="?android:expandableListPreferredChildPaddingLeft"
-        android:minHeight="40dp"
-
-        android:fontFamily="@font/alef"
-        android:textColor="@color/darkGray"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/round_corner_temp_color"
-        android:backgroundTint="@color/darkPink"
-        android:textSize="20dp"
-        android:textAlignment="center"
+        android:backgroundTint="@color/lightPink"
+        android:fontFamily="@font/alef"
+android:layout_gravity="center"
         android:gravity="center"
-        />
+        android:minHeight="40dp"
+        android:paddingStart="?android:expandableListPreferredChildPaddingLeft"
+        android:paddingEnd="?android:expandableListPreferredChildPaddingLeft"
+        android:textAlignment="center"
+        android:textColor="@color/darkGray"
+        android:textSize="20dp" />
 </LinearLayout>

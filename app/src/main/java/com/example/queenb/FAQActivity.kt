@@ -1,6 +1,8 @@
 package com.example.queenb
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ExpandableListView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -12,5 +14,10 @@ class FAQActivity : AppCompatActivity() {
         expandableTextView = findViewById(R.id.eTV)
         val adapter = ExpandableTextViewAdapter(this@FAQActivity)
         expandableTextView.setAdapter(adapter)
+    }
+
+    fun goHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -7,12 +7,13 @@
     tools:context=".FAQActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/descriptionFaqView"
+        android:layout_width="321dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/alef"
         android:padding="5dp"
         android:textColor="@color/darkGray"
-        android:fontFamily="@font/alef"
+        android:layout_gravity="center"
         android:textSize="14dp"
 
         />
