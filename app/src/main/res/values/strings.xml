@@ -41,6 +41,11 @@
         בכך אנחנו מקוות לייצר קבוצה חברתית מגובשת של נשים מוכשרות וחזקות
     </string>
 
+    <string name="need_help_text">
+        היכנסתי לקישור הבא כדי לקבל עוד פרטים
+    </string>
+
+
     <string-array name="city">
         <item>ירושלים</item>
         <item>תל אביב</item>

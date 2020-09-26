@@ -15,6 +15,9 @@
         android:textColor="@color/darkGray"
         android:layout_gravity="center"
         android:textSize="14dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColorLink="@color/blue"
 
         />
 

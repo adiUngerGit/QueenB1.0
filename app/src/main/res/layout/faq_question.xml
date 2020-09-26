@@ -12,17 +12,16 @@
 
     <TextView
         android:id="@+id/feqTitleView"
-        android:layout_width="321dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@drawable/round_corner_temp_color"
         android:backgroundTint="@color/lightPink"
         android:fontFamily="@font/alef"
-android:layout_gravity="center"
-        android:gravity="center"
+        android:gravity="right"
         android:minHeight="40dp"
         android:paddingStart="?android:expandableListPreferredChildPaddingLeft"
         android:paddingEnd="?android:expandableListPreferredChildPaddingLeft"
-        android:textAlignment="center"
         android:textColor="@color/darkGray"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 </LinearLayout>
