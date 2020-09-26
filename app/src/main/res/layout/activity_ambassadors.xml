@@ -10,8 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/search_constraint"
-        android:layout_width="286dp"
-        android:layout_height="2dp"
+        android:layout_width="292dp"
+        android:layout_height="1px"
 
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_rounded_light_gray"
@@ -38,8 +38,8 @@
 
         <LinearLayout
             android:id="@+id/allCheckBox"
-            android:layout_width="274dp"
-            android:layout_height="237dp"
+            android:layout_width="266dp"
+            android:layout_height="187dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +49,8 @@
             app:layout_constraintVertical_bias="0.289">
 
             <LinearLayout
-                android:layout_width="143dp"
-                android:layout_height="178dp"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -60,16 +60,25 @@
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:text="מוקד"
+                    android:clickable="true"
                     android:textStyle="bold"></TextView>
 
                 <CheckBox
                     android:id="@+id/jerusalem"
                     android:layout_width="100dp"
+                    android:contextClickable="true"
                     android:layout_height="40dp"
                     android:fontFamily="@font/alef"
                     android:gravity="center"
                     android:onClick="onCheckboxClicked"
                     android:text="ירושלים"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/haifa"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:onClick="onCheckboxClicked"
+                    android:text="חיפה"></CheckBox>
 
                 <CheckBox
                     android:id="@+id/tel_aviv"
@@ -78,12 +87,6 @@
                     android:onClick="onCheckboxClicked"
                     android:text="תל אביב"></CheckBox>
 
-                <CheckBox
-                    android:id="@+id/haifa"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:onClick="onCheckboxClicked"
-                    android:text="חיפה"></CheckBox>
 
             </LinearLayout>
 
@@ -93,12 +96,22 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:gravity="center"
                     android:text="גיל"
                     android:textStyle="bold"></TextView>
+
+                <CheckBox
+                    android:id="@+id/thirteen"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/alef"
+                    android:gravity="center"
+                    android:onClick="onCheckboxClicked"
+                    android:text="ט'"></CheckBox>
 
                 <CheckBox
                     android:id="@+id/fourteen"
@@ -118,40 +131,23 @@
                     android:onClick="onCheckboxClicked"
                     android:text="י״א"></CheckBox>
 
-                <CheckBox
-                    android:id="@+id/thirteen"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:fontFamily="@font/alef"
-                    android:gravity="center"
-                    android:onClick="onCheckboxClicked"
-                    android:text="ט'"></CheckBox>
 
-                <CheckBox
-                    android:id="@+id/twelve"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:fontFamily="@font/alef"
-                    android:gravity="center"
-                    android:onClick="onCheckboxClicked"
-                    android:text="ח'"></CheckBox>
-
-                <CheckBox
-                    android:id="@+id/sixteen"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:fontFamily="@font/alef"
-                    android:gravity="center"
-                    android:onClick="onCheckboxClicked"
-                    android:text="י״ב"></CheckBox>
+                <!--                <CheckBox-->
+                <!--                    android:id="@+id/sixteen"-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:fontFamily="@font/alef"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:onClick="onCheckboxClicked"-->
+                <!--                    android:text="י״ב"></CheckBox>-->
 
             </LinearLayout>
         </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
             android:foregroundGravity="bottom|center"
             android:onClick="searchByFilter"
             android:src="@drawable/search_icon"
@@ -285,16 +281,17 @@
 
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_constraint">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_ambassador"
             android:layout_width="298dp"
-            android:layout_height="356dp"
+            android:layout_height="1100px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.258">
