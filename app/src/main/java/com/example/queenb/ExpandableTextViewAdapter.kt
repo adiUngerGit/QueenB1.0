@@ -19,6 +19,8 @@ class ExpandableTextViewAdapter(var context: Context) :
     var QUESTION3 = "איפה מתקיימת הפעילות?"
     var QUESTION4 = "איך מתקיימת הפעילות בסגר?"
     var QUESTION5 = "איך אני נרשמת לתכנית?"
+    var QUESTION6 = "למה כדאי לנערה בת 14 ללמוד לתכנת?"
+
     var ANSWER1 =
         "העמותה QueenB הוקמה על ידי סטודנטיות למדעי המחשב מהאוניברסיטה העברית לאור מיעוט הנשים סביבן," +
                 " במטרה להעלות את מספר הנשים הבוחרות לעסוק במקצועות טכנולוגיים" +
@@ -27,6 +29,12 @@ class ExpandableTextViewAdapter(var context: Context) :
         "משמעות אחת נובעת מהביטוי queen bee, מלכת הדבורים - נקבה חזקה בטבע וביטוי שגור" +
                 " בשפה האנגלית לבחורה חזקה ומובילה. משמעות נוספת נובעת מהמילה be, היה לנו חשוב דרך השם להעביר את החשיבות שאנחנו רואות בכך שתהיי עצמך - תגשימי את עצמך " +
                 "בצורה מלאה ותגדירי את עצמך ללא תלות בתכתיבי החברה. כמובן שהקריצה לביונסה לא מקרית."
+
+    var ANSWER6 =
+                "ענף ההייטק הוא הענף היציב והרווחי ביותר במשק הישראלי, במיוחד היום. חברות ההייטק מחפשות עוד ועוד כח אדם מתאים ומבינות את החשיבות שבגיוון אנושי. לימוד תכנות היא נקודת פתיחה שיכולה להבטיח עצמאות כלכלית.\n" +
+                "\n" +
+                "תכנות הוא לא רק כלי שמבטיח עתיד מקצועי. ביחד אנחנו לומדות להיות בטוחות יותר בעצמנו, להיות אמיצות להתנסות בתחומים חדשים, מחזקות את עצמנו ואחת את השנייה."
+
     var ANSWER3 =
         "העמותה פועלת בקרב אוכלוסיית הסטודנטיות למדעי המחשב ברחבי הארץ:\n" +
                 "-תל אביב\n" +
@@ -43,10 +51,11 @@ class ExpandableTextViewAdapter(var context: Context) :
     var ANSWER5 = "מוזמנת להרשם בלינק הבא https://www.queenb.org.il/signup ונהיה בקשר בקרוב."
 
     var questions =
-        arrayOf(QUESTION1, QUESTION2, QUESTION3, QUESTION4, QUESTION5)
+        arrayOf(QUESTION1, QUESTION2, QUESTION6, QUESTION3, QUESTION4, QUESTION5)
     var answers = arrayOf(
         arrayOf(ANSWER1),
         arrayOf(ANSWER2),
+        arrayOf(ANSWER6),
         arrayOf(ANSWER3),
         arrayOf(ANSWER4),
         arrayOf(ANSWER5)
