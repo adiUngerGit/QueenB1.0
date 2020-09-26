@@ -11,26 +11,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FAQActivity"></activity>
-        <activity android:name=".AboutAs" />
-        <activity android:name=".ambassadors" />
-        <activity android:name=".our_projects" />
-        <activity android:name=".FirstPageQuestions" />
-        <activity android:name=".Finall" />
-        <activity android:name=".Ex4B" />
-        <activity android:name=".Ex4" />
-        <activity android:name=".FinalHTML" />
-        <activity android:name=".Ex3" />
-        <activity android:name=".Ex2" />
-        <activity android:name=".Ex1" />
-        <activity android:name=".contact_us" />
+        <activity android:name=".FAQActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AboutAs"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ambassadors"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".our_projects"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FirstPageQuestions"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Finall"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Ex4B"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Ex4"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FinalHTML"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Ex3"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Ex2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Ex1"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".contact_us"
+            android:screenOrientation="portrait">
+        </activity>
 
         <uses-library
             android:name="com.google.android.things"
             android:required="false" />
 
         <activity android:name=".send_whatsapp" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
