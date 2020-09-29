@@ -297,6 +297,8 @@ class ambassadors : AppCompatActivity() {
                 R.id.jerusalem -> {
                     if (checked) {
                         allowed_cities.add("ירושלים")
+                    }else {
+                        allowed_cities.remove("ירושלים")
                     }
                 }
                 R.id.tel_aviv -> {
