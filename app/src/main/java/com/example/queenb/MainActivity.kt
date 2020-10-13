@@ -23,15 +23,6 @@ class MainActivity : AppCompatActivity() {
         var viewPager = findViewById<HorizontalScrollView>(R.id.ScrollingImage)
      //   viewPager.smoothScrollTo(0, 1);
 
-//        var x = 0;
-//        fun scroll() {
-//            mScrollView.smoothScrollTo(200, 10)
-//            Handler(Looper.getMainLooper()).postDelayed(scroll, 1000)
-//       }
-//
-//       Handler(Looper.getMainLooper()).postDelayed({
-//           mScrollView.smoothScrollTo(200, 10)*/
-     //   }, 1000)
     }
 
     fun FirstPageQuestions(view: View) {

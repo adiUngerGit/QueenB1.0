@@ -34,6 +34,7 @@ class Ex2 : AppCompatActivity() {
 
     fun backHome(view: View) {
         val intent = Intent(this, MainActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
     }
 }
