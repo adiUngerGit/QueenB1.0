@@ -177,10 +177,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="110dp"
-            android:layout_height="80dp"
+            android:layout_width="97dp"
+            android:layout_height="44dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/queenb_icon3"
+            android:src="@drawable/logo4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

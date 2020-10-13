@@ -36,76 +36,91 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="317dp"
-        android:layout_height="443dp"
+        android:layout_width="314dp"
+        android:layout_height="326dp"
         android:background="@drawable/my_border"
         android:fontFamily="@font/alef"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.277">
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:textAlignment="textStart"
-            >
+            android:textAlignment="textStart">
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="307dp"
-                android:layout_height="209dp"
-                android:fontFamily="@font/alef"
-                android:gravity="right"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:paddingEnd="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:text="@string/about_us_title"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/lightGray"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="307dp"
+                            android:layout_height="209dp"
+                            android:fontFamily="@font/alef"
+                            android:gravity="right"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/about_us_title"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/lightGray"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/details"
-                android:layout_width="305dp"
-                android:layout_height="527dp"
-                android:layout_below="@+id/title"
-                android:fontFamily="@font/alef"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:paddingEnd="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:text="@string/about_us_details"
-                android:textAlignment="textStart"
-                android:textColor="@color/darkGray"
-                android:textSize="18sp" />
+                        <TextView
+                            android:id="@+id/details"
+                            android:layout_width="305dp"
+                            android:layout_height="527dp"
+                            android:layout_below="@+id/title"
+                            android:fontFamily="@font/alef"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/about_us_details"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/darkGray"
+                            android:textSize="18sp" />
 
 
-            <TextView
-                android:id="@+id/whatWeDo"
-                android:layout_width="307dp"
-                android:layout_height="341dp"
-                android:layout_below="@+id/details"
-                android:fontFamily="@font/alef"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:paddingEnd="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:text="@string/about_us_whatWeDo"
-                android:textAlignment="textStart"
-                android:textColor="@color/darkGray"
-                android:textSize="18sp" />
+                        <TextView
+                            android:id="@+id/whatWeDo"
+                            android:layout_width="307dp"
+                            android:layout_height="341dp"
+                            android:layout_below="@+id/details"
+                            android:fontFamily="@font/alef"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/about_us_whatWeDo"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/darkGray"
+                            android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="להרשמה"
+        android:onClick="enterSign"
+        android:textColor="#1565C0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -369,6 +369,14 @@ class ambassadors : AppCompatActivity() {
 
     }
 
+
+    fun enterSign(view: View) {
+        val url = "https://www.queenb.org.il/signup"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+    }
+
     fun goHome(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
