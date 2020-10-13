@@ -250,11 +250,10 @@ class ambassadors : AppCompatActivity() {
         }
 
         fun GoInstegram(url: String) {
-
+val g = "f"
         }
 
         fun SendWhatsappMsg(url: String) {
-
 
             try {
                 context.packageManager.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES)
