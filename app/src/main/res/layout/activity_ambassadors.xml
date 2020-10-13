@@ -282,8 +282,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/general_layout"
-        android:layout_width="369dp"
-        android:layout_height="427dp"
+        android:layout_width="402dp"
+        android:layout_height="527dp"
 
 
         android:layout_marginTop="5dp"
@@ -295,7 +295,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_ambassador"
             android:layout_width="298dp"
-            android:layout_height="1100px"
+            android:layout_height="1300px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

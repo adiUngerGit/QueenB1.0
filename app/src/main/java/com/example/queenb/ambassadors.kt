@@ -260,9 +260,7 @@ class ambassadors : AppCompatActivity() {
 
         }
 
-        fun GoInstegram(url: String) {
-val g = "f"
-        }
+
 
         fun SendWhatsappMsg(url: String) {
 
@@ -412,7 +410,7 @@ val g = "f"
         if (parms2.height > 350) {
             parms2.height = 350
         } else {
-            parms2.height = 1100
+            parms2.height = 1300
 
         }
         ambassadors.setLayoutParams(parms2);
@@ -426,8 +424,7 @@ val g = "f"
         if (parms3.height > 350) {
             parms3.height = 350
         } else {
-            parms3.height = 1100
-
+            parms3.height = 1300
         }
         recycler_ambassador.setLayoutParams(parms3);
 
