@@ -33,7 +33,18 @@ class ambassadors : AppCompatActivity() {
         val myAddapter = MyAddapter(profiles_list, this)
         recycler_ambassador.layoutManager = LinearLayoutManager(this)
         recycler_ambassador.adapter = myAddapter
+        restartListsCheckBox()
+    }
 
+    private fun restartListsCheckBox() {
+        allowed_cities.add("ירושלים")
+        allowed_cities.add("תל אביב")
+        allowed_cities.add("חיפה")
+
+        allowed_ages.add("י״א")
+        allowed_ages.add("י'")
+        allowed_ages.add("ט'")
+        allowed_ages.add("ח'")
 
     }
 
@@ -277,6 +288,10 @@ class ambassadors : AppCompatActivity() {
                 if (profile.grade in allowed_ages)
                     filtered.add((profile))
         }
+        if (filtered.size == 0) {
+            Toast.makeText(this, "אווי.. איו בנות כאלה במאגר שלנו.\nאבל הי! אולי תהיה את המלכה הבאה!.", Toast.LENGTH_SHORT).show()
+
+        }
 
         val myAddapter = MyAddapter(filtered, this)
 
@@ -322,13 +337,6 @@ class ambassadors : AppCompatActivity() {
                         allowed_ages.remove("י״א")
                     }
                 }
-//                R.id.sixteen -> {
-//                    if (checked) {
-//                        allowed_ages.add("י״ב")
-//                    } else {
-//                        allowed_ages.remove("י״ב")
-//                    }
-//                }
                 R.id.fourteen -> {
                     if (checked) {
                         allowed_ages.add("י'")
@@ -403,6 +411,7 @@ class ambassadors : AppCompatActivity() {
 
         }
         recycler_ambassador.setLayoutParams(parms3);
+
 
     }
 

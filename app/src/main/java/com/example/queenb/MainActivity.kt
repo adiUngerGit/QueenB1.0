@@ -82,5 +82,12 @@ fun ambassadors(view: View) {
         startActivity(intent)
     }
 
+    fun enterSign(view: View) {
+        val url = "https://www.queenb.org.il/signup"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+    }
+
 
 }
