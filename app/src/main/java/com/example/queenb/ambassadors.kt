@@ -49,7 +49,6 @@ class ambassadors : AppCompatActivity() {
     }
 
     private fun create_ambassators() {
-        // val tempInstagram = "ruti.popilov@mail.huji.ac.il" // todo delete this, add real ambassadors
         val profile1 = ambassador_profile(
             "מגל אופיר",
             "ירושלים",
@@ -216,10 +215,22 @@ class ambassadors : AppCompatActivity() {
 
             }
 
-            // if instegram pressed :
+            //if  instagram button pressed:
 
             holder.itemView.instagram_button.setOnClickListener {
-
+                val url = arrayList[position].instagram
+                if(url.isEmpty()) {
+                    Toast.makeText(
+                        this.context,
+                        "לשגרירה זו אין קישור לאינסטגרם",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                else{
+                    val i = Intent(Intent.ACTION_VIEW)
+                    i.data = Uri.parse(url)
+                    context.startActivity(i)
+                }
 
             }
 
